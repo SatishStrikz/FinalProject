@@ -1,5 +1,8 @@
 package steps;
 
+import java.util.List;
+
+import io.cucumber.datatable.DataTable;
 import net.serenitybdd.annotations.Step;
 import net.serenitybdd.core.pages.PageObject;
 import pages.HomePage;
@@ -33,6 +36,16 @@ public void user_validate_quick_launch_text(String quickLaunchText) throws Inter
 	// TODO Auto-generated method stub
 	
 }
+//public void userName(DataTable dataTable) {
+//	List<List<String>>data = dataTable.asList(Type)List.class);
+//	for(int i=0;i<=data.size();i++) {
+//      homepage.enteringUsername(data.get(i).get(1));
+//}}
+//public void password(DataTable dataTable) {
+//	// TODO Auto-generated method stub
+//	homepage.enteringPassword(dataTable);
+//	
+//}
 
 	
 

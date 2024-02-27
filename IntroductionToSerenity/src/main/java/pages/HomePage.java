@@ -3,10 +3,16 @@ package pages;
 
 
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
 import org.junit.Assert;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
-
+import io.cucumber.datatable.DataTable;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 
@@ -38,16 +44,19 @@ public class HomePage extends PageObject{
 	}
 
 	public void clickLogin() {
-		// TODO Auto-generated method stub
+//		 TODO Auto-generated method stub
 		btnLogin.click();
 		
-	}
+		}
 
 	public void user_validate_quick_launch_text(String quickLaunchText) throws InterruptedException {
 		// TODO Auto-generated method stub
 		Thread.sleep(3000);
 		Assert.assertEquals(quickLaunchText, textQuickLaunch.getText());
+		
 	}
+
+
 	
 
 }

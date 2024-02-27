@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import net.serenitybdd.annotations.Steps;
@@ -19,6 +20,7 @@ public class HomePageStepDefinitions extends PageObject{
 
 	@Then("user enters username {string}")
 	public void user_enters_username(String userName) {
+		
 	    // Write code here that turns the phrase above into concrete actions
 	    homepagesteps.enterUsername(userName);
 	}
@@ -28,6 +30,17 @@ public class HomePageStepDefinitions extends PageObject{
 	    // Write code here that turns the phrase above into concrete actions
 		 homepagesteps.enterPassword(password);
 	}
+
+//@Then("user enters username")
+//public void user_enters_username(DataTable dataTable) {
+//  
+//    homepagesteps.userName(dataTable);
+//}
+//@Then("user enters password")
+//public void user_enters_password(io.cucumber.datatable.DataTable dataTable) {
+//    homepagesteps.password(dataTable);
+//}
+
 
 	@Then("user clicks on login button")
 	public void user_clicks_on_login_button() {
