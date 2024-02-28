@@ -47,6 +47,7 @@ public class HomePage extends PageObject{
 //		 TODO Auto-generated method stub
 		btnLogin.click();
 		
+		
 		}
 
 	public void user_validate_quick_launch_text(String quickLaunchText) throws InterruptedException {
